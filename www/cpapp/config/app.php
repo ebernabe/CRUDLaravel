@@ -114,6 +114,8 @@ return [
 		 * Laravel Framework Service Providers...
 		 */
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
+		'Cartalyst\Sentinel\Laravel\SentinelServiceProvider',
+		'Illuminate\Html\HtmlServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Bus\BusServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
@@ -192,6 +194,11 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		'Activation' => 'Cartalyst\Sentinel\Laravel\Facades\Activation',
+		'Reminder'   => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
+		'Sentinel'   => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
+		'Form'      => 'Illuminate\Html\FormFacade',
+		'Html'      => 'Illuminate\Html\HtmlFacade',
 
 	],
 

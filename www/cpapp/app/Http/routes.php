@@ -11,16 +11,14 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
-
-Route::any('foo', function()
-{
-    return 'Hello World';
-});
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+// Route::get('/', 'WelcomeController@index');
+Route::get('/',[
+		'as' => 'home',
+		'uses' => 'PagesController@home'
+	]);
+Route::resource('tasks', 'TasksController');
+// Route::get('home', 'HomeController@index');
+// Route::controllers([
+// 	'auth' => 'Auth\AuthController',
+// 	'password' => 'Auth\PasswordController',
+// ]);
